@@ -1,0 +1,80 @@
+form {
+    text-align :center;
+}
+
+#avis {
+    border-style : solid;
+    color : red ;
+}
+
+input[type=range]{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  color : black;
+}
+
+details {
+	display:block; /* Pour les navigateurs n'implémentant pas <details> et <summary> */
+	width:100%;
+	margin:10px 0;
+}
+summary {
+	display:block; /* Pour les navigateurs n'implémentant pas <details> et <summary> */
+	background:#99B92C;
+	color:white;
+	border-radius:5px;
+	padding:5px;
+	cursor:pointer;font-weight:bold;
+}
+/*
+p + details, form, h3 {
+	margin-left:214px;
+}
+*/
+.hint {margin-bottom:2em;}
+.ig {
+	float:left;
+	margin-right:10px;
+}
+
+/* Styles pour remplacer l'icône par défaut */
+summary::-webkit-details-marker {
+display: none
+}
+
+summary:after {
+	content: "+";
+	color: #fff;
+	float: left;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: -5px 5px 0 0;
+	padding: 0;
+	text-align: center;
+	width: 20px;
+}
+
+details[open] summary:after {
+	content: "-";
+}
+
+textarea {
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
